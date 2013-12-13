@@ -1,5 +1,14 @@
 // JavaScript Document duplicate to send to GitHub
-window.onload = getMyLocation 
+//window.onload = "getMyLocation()" 
+//global variables
+var startLat=0
+var startLong=0
+var startAcc=0
+var startTime=0
+var curLat=0
+var curLong=0
+var curAcc=0
+var curtime=0
 
 function getMyLocation() {
 	if (navigator.geolocation) 

@@ -1,0 +1,72 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mobile Tracker</title>
+
+<link href="jquery.mobile.structure-1.4.0.min.css" rel="stylesheet" type="text/css">
+<link href="myLoc.css" rel="stylesheet" type="text/css">
+
+<script src="jquery-1.10.2.min.js" type="text/javascript"></script>
+<script src="jquery.mobile-1.4.0.min.js" type="text/javascript"></script>
+<script src="myLoc.js"></script>
+</head> 
+<body onload="getMyLocation()"> 
+<div class="ui-page-theme-a" id="page" data-role="page">
+	<h2 class="ui-bar-a">Mobile Tracker</h2>
+	<div data-role="content">
+    <button class="ui-btn-a" onClick="startLocation()">Get Start Location
+    </button>
+    <table width="90%" border="1" align="center" cellpadding="2" cellspacing="2">
+  <tr>
+    <td>Latitude</td>
+    <td>Longitude</td>
+    <td>Accuracy</td>
+    <td>Time</td>
+  </tr>
+  <tr>
+    <td>startLat.value</td>
+    <td>startLong.value</td>
+    <td>startAcc.value</td>
+    <td>startTime.value</td>
+  </tr>
+</table>
+
+	
+    
+  	<button class="ui-btn-a" onClick="currentLocation()">Stop Tracking
+  	</button>
+    <table width="90%" border="1" align="center" cellspacing="2" cellpadding="2">
+  <tr>
+    <td>Latitude</td>
+    <td>Longitude</td>
+    <td>Accuracy</td>
+    <td>Time</td>
+  </tr>
+  <tr>
+    <td>curLat.value</td>
+    <td>curLong.value</td>
+    <td>curAcc.value</td>
+    <td>curTime.value</td>
+  </tr>
+</table>
+<p></p> 
+<table width="90%" border="1" align="center" cellspacing="2" cellpadding="2">
+  <tr>
+    <td>Results:</td>
+    <td>d</td>
+    <td>Duration</td>
+  </tr>
+</table>
+
+	<button class="ui-btn-a" type="reset">Clear</button>
+</div>
+
+ 
+		<h4 class="ui-bar-a">Final Project: </h4>
+	
+</div>
+
+
+</body>
+</html>
